@@ -166,6 +166,13 @@ footer .container {
   background-image: url(../img/googleplus.png);
 }
 
+.botoes-banner{
+  text-align: right;
+}
+
+.botoes-banner li{
+  display: inline;
+}
 
 
 
