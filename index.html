@@ -3,9 +3,11 @@
   <head>
     <title>Mirror Fashion</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -36,14 +38,21 @@
           <input type="search" name="q" id="q">
           <input type="image" src="img/busca.png">
         </form>
-
       </section>
 
       <section class="menu-departamentos">
         <h2>Departamentos</h2>
         <nav>
           <ul>
-            <li><a href="#">Blusas e Camisas</a></li>
+            <li>
+              <a href="#">Blusas e Camisas</a>
+              <ul>
+                <li><a href="#">Manga curta</a></li>
+                <li><a href="#">Manga comprida</a></li>
+                <li><a href="#">Camisa social</a></li>
+                <li><a href="#">Camisa casual</a></li>
+              </ul>
+            </li>
             <li><a href="#">Calças</a></li>
             <li><a href="#">Saias</a></li>
             <li><a href="#">Vestidos</a></li>
@@ -53,14 +62,15 @@
           </ul>
         </nav>
       </section>
+
+      <section class="banner">
+        <img src="img/destaque-home.png" alt="Promoção: Big City Night">
+      </section>
       <section class="botoes-banner">
         <ul>
           <li><a href="#"><img src="img/play.png" id="play" alt="Play"></li></a>
           <li><a href="#"><img src="img/pause.png" id="pause" alt="Pause"></li></a>
         </ul>
-      </section>
-      <section class="banner">
-        <img src="img/destaque-home.png" alt="Promoção: Big City Night">
       </section>
     </div>
 
@@ -178,7 +188,7 @@
 
     <footer id="rodape">
       <div class="container">
-        <img src="img/logo.png" alt="Logo Mirror Fashion">
+        <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
         &copy; Copyright Mirror Fashion
 
         <ul class="social">
