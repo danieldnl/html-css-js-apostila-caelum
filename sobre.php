@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sobre a Mirror Fashion</title>
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-     <header class="container">
-      <h1><img src="img/logo.png" alt="Mirror Fashion"></h1>
-
-      <p class="sacola">Nenhum item na sacola de compras</p>
-
-      <nav class="menu-setores">
-        <ul>
-          <li><a href="#">Sua Conta</a></li>
-          <li><a href="#">Lista de Desejos</a></li>
-          <li><a href="#">Cartão Fidelidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="#">Ajuda</a></li>
-        </ul>
-      </nav>
-    </header>
+    <?php
+      $cabecalho_title = "Sobre a Mirror Fashion";
+      include("_cabecalho.php");
+    ?>
 
     <article class="container">
       <section>
         <p>A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo.
-        Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de
+        Fundada há <?php print (date("Y") - 1932);?> anos, possui filiais em 124 países, sendo líder de mercado com mais de 90% de
         participação em 118 deles.</p>
 
         <p>Nosso centro de distribuição fica em <a href="https://maps.google.com.br/?q=Jacarezinho"> Jacarezinho, no Paraná</a>. De lá, saem 48 aviões que distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição:</p>
@@ -87,18 +62,7 @@
       </section>
     </article>
 
-    <footer id="rodape">
-      <div class="container">
-        <img src="img/logo.png" alt="Logo Mirror Fashion">
-        &copy; Copyright Mirror Fashion
-
-        <ul class="social">
-          <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
-          <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
-          <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
-        </ul>
-      </div>
-    </footer>
+    <?php include("_rodape.php");?>
 
   </body>
 </html>
