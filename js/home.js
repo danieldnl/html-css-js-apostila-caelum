@@ -36,3 +36,10 @@ document.querySelector('#play').onclick = function(){
 }
 
 var timer = setInterval(trocaBanner, 4000);
+
+
+$('.novidades').addClass('painel-compacto');
+
+$('.novidades button').click(function() {
+  $('.novidades').removeClass('painel-compacto');
+});

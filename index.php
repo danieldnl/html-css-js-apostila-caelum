@@ -48,12 +48,12 @@
     </div>
 
     <div class="container paineis">
-      <section class="painel novidades">
+      <section class="painel novidades painel-compacto">
         <h2>Novidades</h2>
         <ol>
           <?php
             $conexao = mysqli_connect("127.0.0.1", "root", "", "mirror-fashion");
-            $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data LIMIT 0, 6");
+            $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data LIMIT 0, 12");
             while ($produto = mysqli_fetch_array($dados)):
           ?>
           <li>
@@ -66,13 +66,14 @@
           </li>
           <?php endwhile; ?>
         </ol>
+        <button type="button">Mostra mais</button>
       </section>
 
-      <section class="painel mais-vendidos">
+      <section class="painel mais-vendidos painel-compacto">
         <h2>Mais Vendidos</h2>
         <ol>
           <?php
-            $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas LIMIT 0, 6");
+            $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas LIMIT 0, 12");
             while ($produto = mysqli_fetch_array($dados)):
           ?>
           <li>
@@ -85,11 +86,12 @@
           </li>
           <?php endwhile; ?>
         </ol>
+        <button type="button">Mostra mais</button>
       </section>
     </div>
 
     <?php include("_rodape.php");?>
-
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/home.js"></script>
   </body>
 </html>

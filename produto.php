@@ -16,6 +16,8 @@
           <h1><?= $produto["nome"]?></h1>
           <p>por apenas <?= $produto["preco"]?></p>
 
+          <div class="fb-like" data-href="http://mirrorfashion.net/loja"
+              data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
           <form action="checkout.php" method="POST">
             <input type="hidden" name="id" value="<?= $produto["id"] ?>">
 
@@ -40,6 +42,7 @@
             <fieldset class="tamanhos">
               <legend>Escolha o tamanho:</legend>
               <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+              <output for="tamanho" name="valortamanho">42</output>
             </fieldset>
 
             <input type="submit" class="comprar" value="Comprar">
@@ -78,6 +81,9 @@
         </div>
       </div>
     </div>
+    <div id="fb-root"></div>
     <?php include("_rodape.php");?>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/produto.js"></script>
   </body>
 </html>

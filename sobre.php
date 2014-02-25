@@ -50,6 +50,7 @@
 
       <section id="diferenciais">
         <h2>Diferenciais</h2>
+        <iframe width="420" height="315" src="//www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allowfullscreen></iframe>
         <ul>
           <li>Menor preço do varejo, garantido</li>
           <li>Se você achar uma loja mais barata, leva o produto de graça</li>
@@ -61,6 +62,8 @@
           <li>Mais de um milhão de funcionários em todo o mundo</li>
         </ul>
       </section>
+
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?q=Jacarezinho&amp;output=embed"></iframe>
     </article>
 
     <?php include("_rodape.php");?>

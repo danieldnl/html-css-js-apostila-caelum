@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <?php print @$cabecalho_css;?>
