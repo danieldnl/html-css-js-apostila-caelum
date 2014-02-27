@@ -7,9 +7,10 @@
 
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet/less" href="less/base.less"/>
     <?php print @$cabecalho_css;?>
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
+
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
